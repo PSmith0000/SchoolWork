@@ -9,6 +9,9 @@ public class Main {
         if(score > -1) {
             System.out.println(score + " = " + GetLetterGrade(score));
         }
+        else {
+            System.out.println("Invalid Score, Enter a value between 0-100");
+        }
     }
 
 
