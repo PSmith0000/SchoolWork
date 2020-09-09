@@ -3,7 +3,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(GetLetterGrade(-1));
+
+        System.out.println("Enter a score between 0-100");
+        Double score = HomeWorkUtils.GetConsoleInput(Double.class);
+        if(score > -1) {
+            System.out.println(score + " = " + GetLetterGrade(score));
+        }
     }
 
 
