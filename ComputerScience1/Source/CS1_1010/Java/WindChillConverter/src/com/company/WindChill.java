@@ -17,7 +17,7 @@ import com.company.Logging.Logger;
 public class WindChill {
 
     private static boolean ValidData(double Temp, double WindSpeed) {
-        if(Temp <= 50 && WindSpeed > 3){
+        if(Temp <= 50 && WindSpeed >= 3){
             return true;
         }
         return false;

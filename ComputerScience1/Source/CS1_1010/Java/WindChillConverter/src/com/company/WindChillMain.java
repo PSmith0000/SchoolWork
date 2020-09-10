@@ -1,6 +1,6 @@
 /**
  * ----------------------------------------------------
- * File Name: Main.Java
+ * File Name: WindChillMain.Java
  * Project name: Wind Chill Converter
  * ----------------------------------------------------
  * Creator's name: Preston Smith
@@ -22,11 +22,16 @@ package com.company;
  * <hr>
  * @author Preston Smith
  */
-public class Main {
+public class WindChillMain {
 
     public static void main(String[] args) {
         HomeWorkUtils.GetProjectWelcome("Project1");
-
+        Double Temp, WindSpeed; //Ik "D" variant is a class-object however Generics requires this for some reason.
+        System.out.println("Enter Temp Value (F)");
+        Temp = HomeWorkUtils.GetConsoleInput(Double.class);
+        System.out.println("Enter WindSpeed Value (MPH)");
+        WindSpeed = HomeWorkUtils.GetConsoleInput(Double.class);
+        System.out.println(WindChill.CalculateWindSpeed(WindSpeed, Temp));
     }
 
 }
