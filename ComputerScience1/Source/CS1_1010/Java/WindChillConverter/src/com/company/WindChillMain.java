@@ -26,7 +26,7 @@ public class WindChillMain {
 
     public static void main(String[] args) {
         HomeWorkUtils.GetProjectWelcome("Project1");
-        Double Temp, WindSpeed; //Ik "D" variant is a class-object however Generics requires this for some reason.
+        Double Temp, WindSpeed; //Ik "D" variant is a class-object however Generics wont allow for cast to prim type.
         System.out.println("Enter Temp Value (F)");
         Temp = HomeWorkUtils.GetConsoleInput(Double.class);
         System.out.println("Enter WindSpeed Value (MPH)");
